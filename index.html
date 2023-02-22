@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public\css\styles.css"/>
+  </head>
+  <body></body>
+</html>
+
+<div class="box" id="heading">
+  <h1>My List</h1>
+</div>
+
+<div class="box">
+  
+  <form action="/delete" method="post">
+    <div class="item">
+      <input
+        type="checkbox"
+        name="checkBox"
+        value="63a33da7e30c1a0368799372"
+        onChange="this.form.submit()"
+      />
+      <p>Welcome to your to - do list!</p>
+    </div>
+    <input type="hidden" name="listName" value="My List" />
+  </form>
+  
+  <form action="/delete" method="post">
+    <div class="item">
+      <input
+        type="checkbox"
+        name="checkBox"
+        value="63a33da7e30c1a0368799373"
+        onChange="this.form.submit()"
+      />
+      <p>Hit the + button to add a new item</p>
+    </div>
+    <input type="hidden" name="listName" value="My List" />
+  </form>
+  
+  <form action="/" method="post" class="item">
+    <input
+      type="text"
+      placeholder="New Item"
+      name="newItem"
+      autocomplete="off"
+    />
+    <button type="submit" name="list" value="My List">+</button>
+  </form>
+</div>
+
+</body>
+<footer>
+  Copyright Jayloneal 2023
+</footer>
+</html>
